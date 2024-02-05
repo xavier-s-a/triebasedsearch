@@ -1,0 +1,43 @@
+
+Sources with similar content found for the project on the internet.
+
+We categorized the discovered sources into various modules based on the needs of our project.
+
+1. For Computing the active Node:
+
+We have found the following codes and documents relevant in implementing the active node algorithm:
+* https://www.proquest.com/docview/851714283/fulltextPDF/A7BCE4E1DB5D4A33PQ/1?accountid=15078- This paper's section 3.4.2 contains the explanation of the active node calculation.
+* https://github.com/syed-saifuddin/Efficient-Instant-Fuzzy-Search-With-Proximity-Ranking - This code has a portion for implementing an autocompletion feature which can be referenced for the project.
+* https://github.com/SRCH2/srch2-ngn/blob/925f36971aa6a8b31cdc59f7992790169e97ee00/src/core/operation/ActiveNode.cpp  - contains C++ code for computing active nodes for the current input. 
+
+2. Regarding the data structure 
+The following codes look relevant for implementing the trie data structure. Since the trie implementation is like building and working on decision trees the codes and articles look relevant to our project.
+ 
+* This is a Wikipedia overview of what pruning is with Decision Trees -https://en.wikipedia.org/wiki/Decision_tree_pruning 
+* This resource talks about how to build better decision trees with pruning.  The code in GitHub (directly linked from the resource) is in Python and uses Jupyter Notebook, which is a platform for data science. 
+    * https://towardsdatascience.com/build-better-decision-trees-with-pruning-8f467e73b107
+    * https://github.com/edkrueger/tree-demos
+* This code is an implementation of a Decision Tree without Pruning in Java, that we can use for comparison purposes.- https://github.com/CodeMySky/decision-tree/tree/master 
+* This code is the implementation of a decision tree with reduced error pruning in Java.  This code uses the ID3 algorithm. https://github.com/kevalmorabia97/ID3-Decision-Tree-Classifier-in-Java/tree/master
+* This article talks specifically about the ID3 algorithm, which is used to build decision trees. - https://towardsdatascience.com/decision-trees-for-classification-id3-algorithm-explained-89df76e72df1
+* This research paper looks at IP address truncation using a decision tree pruning design.  IP addresses would be in string format, and could potentially use String Similarity Search. -https://www.proquest.com/docview/2637623050/E9806BC76CB649CDPQ/2?accountid=15078
+* This research paper is an analysis of the Reduced Error Pruning algorithm. -https://www.proquest.com/docview/2554141282/E9806BC76CB649CDPQ/4?accountid=15078
+* https://www.geeksforgeeks.org/word-break-problem-trie-solution/ - This code is designed to search for words within a Trie, which aligns well with our intentions of using word-based input. It seems like a suitable solution for our needs.
+* https://github.com/gauthamhs/Algorithms/blob/master/Algorithms/src/main/java/algorithms/datastructures/trie/AutoComplete.java - This appears to be quite beneficial for our project, particularly for implementing the auto-completion feature. The code already incorporates an auto-completion mechanism based on a Trie, which aligns well with our project's Trie implementation.
+3. Edit distance calculation.
+* https://codereview.stackexchange.com/questions/191179/trie-based-string-indexing-with-edit-distance-levenshtein-in-go
+Within this resource, the Go code offers a method to perform similarity searches by harnessing Trie data structures in conjunction with Levenshtein distance. This approach efficiently handles word datasets, enabling swift and flexible searches that accommodate minor spelling errors and variations, enhancing search functionality. It is worth exploring the possibility of converting this approach into Java to fulfil our specific requirements.
+* https://stackoverflow.com/questions/4868969/implementing-a-simple-trie-for-efficient-levenshtein-distance-calculation-java
+We came across a code implementation that demonstrates using a Trie data structure for optimizing Levenshtein distance calculations. The author applies this Trie-based search algorithm to compute the minimum Levenshtein distance efficiently, enabling the identification of closest words, even when accounting for spelling variations.
+* https://www.lavivienpost.com/autocorrect-with-trie-and-edit-distance-java/
+This Java code showcases an "Autocorrector" application that leverages a Trie data structure and Levenshtein Distance to propose the most relevant word from a dictionary based on an input word. It is a valuable tool for enhancing user experiences in applications by offering alternatives for misspelt or partially typed words, facilitating features such as search auto-completion and spelling correction. The code not only manages dictionary loading, string similarity computation, and suggestion generation but also demonstrates how data structures and algorithms can be employed to create practical, real-world functionality, albeit with some differences from our own implementation, notably the use of a HashMap. 
+4. Filtering algorithms:
+We didn't come across any relevant code for this specific part of our project, but we did manage to discover some papers that are connected to our project.
+* In this research paper the authors have introduced new and efficient ways of filtering before or after merging similar strings.
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4497434
+* As the name of the research paper, in this paper, a faster way of filtering strings that match with an approximate threshold is briefed
+https://epubs.siam.org/doi/pdf/10.1137/1.9781611972870.8
+* This paper seems to be a briefing on all the processes of string matching, but all that is required is from pages 26 to 36
+https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/25741/1/StefanBurkhardt_ProfDrHansPeterLehnhof.pdf
+While we couldn't locate the entire code for our project, we did come across some relevant pieces that could be valuable in our project's implementation. This discovery has the potential to enhance our project's efficiency, making it more achievable.
+
